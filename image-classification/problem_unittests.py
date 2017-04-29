@@ -1,12 +1,11 @@
 import os
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 import random
 from unittest.mock import MagicMock
 
-
 def _print_success_message():
-    print('Tests Passed')
+    return print('Tests Passed')
 
 
 def test_folder_path(cifar10_dataset_folder_path):
@@ -197,3 +196,5 @@ def test_train_nn(train_neural_network):
     assert mock_session.run.called, 'Session not used'
 
     _print_success_message()
+
+
